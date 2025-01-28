@@ -1,0 +1,122 @@
+header {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+}
+
+header:hover {
+  background-color: black;
+  transition: 0.5s ease-out;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.header-left li img {
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.header-left li {
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.header-left a,
+.header-right a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.header-right li i {
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .header-left li {
+    padding: 1px;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+  }
+
+  header ul {
+    padding: 10px 5px;
+  }
+}
+
+@media (max-width: 1450px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .footer-container {
+    max-width: 720px;
+  }
+  .wrapper .footer-widget,
+  .wrapper .footer-widget:nth-child(1) {
+    width: 100%;
+    margin: 0 10px 50px;
+  }
+  h1,
+  h2 {
+    font-size: 26px;
+  }
+
+  .shoe-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shoe-card {
+    padding: 5px 0;
+  }
+
+  .shoe-pics {
+    width: 300px;
+  }
+
+  .top-sold {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pop h4 {
+    font-size: 20px;
+  }
+
+  .gray-back-top,
+  .gray-back-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .panda-pic,
+  .samba-pic {
+    max-width: 300px;
+    margin: 0;
+    padding: 0;
+  }
+}

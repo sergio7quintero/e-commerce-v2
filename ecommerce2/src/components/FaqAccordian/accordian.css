@@ -1,0 +1,75 @@
+#faq {
+  padding-top: 50px;
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.accordian {
+  margin: 60px auto;
+  width: 750px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 0;
+}
+
+.accordian li {
+  list-style: none;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #eaeaea;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.accordian li label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+label::before {
+  content: "+";
+  margin-right: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.accordian .content {
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked + label + .content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+
+.accordian input[type="radio"]:checked + label::before {
+  content: "-";
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 26px;
+  }
+
+  .accordian {
+    margin: 0;
+    width: 85%;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+  }
+}
