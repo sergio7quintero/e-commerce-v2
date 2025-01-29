@@ -60,9 +60,7 @@ export default function Products() {
   }, []);
 
   const products = async () => {
-    const list = await fetch(
-      "https://gi-ecomercev2-b86e7972323a.herokuapp.com/API/getproducts"
-    );
+    const list = await fetch("/API/getproducts");
     const items = await list.json();
     setProduct(items);
     setCategory(items);

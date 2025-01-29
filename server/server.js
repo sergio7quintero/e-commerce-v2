@@ -1,11 +1,18 @@
-const express = require("express");
+import express from "express";
+import mysql from "mysql2";
+import cors from "cors";
+import path from "path";
+import { fileURLToPath } from "url";
+
 const app = express();
-const mysql = require("mysql2");
-const cors = require("cors");
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 app.use(cors()); // Allow CORS for all origins (if needed, configure this for specific origins)
 app.use(express.json());
-const port = 9000;
+app.use(express.static(path.join(__dirname, "../build")));
+const port = process.env.PORT || 3002;
 
 // Establish connection to database using a connection pool
 const pool = mysql.createPool({
@@ -35,6 +42,10 @@ app.get("/API/getproducts", (req, res) => {
     console.log(result);
     res.json(result); // Return the products as JSON
   });
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../build/index.html"));
 });
 
 // Start the server
