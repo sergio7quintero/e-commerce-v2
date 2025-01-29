@@ -4,6 +4,9 @@ header {
   background-color: transparent;
   z-index: 1;
 }
+header.canHover {
+  background-color: red;
+}
 
 header:hover {
   background-color: black;
