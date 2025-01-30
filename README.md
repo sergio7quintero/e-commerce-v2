@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Mentor made GitHub commit comments, I would have been more professional.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

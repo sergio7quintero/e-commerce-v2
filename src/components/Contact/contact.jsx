@@ -29,7 +29,7 @@ const Contact = () => {
             placeholder="First Name"
           />
           {errors.firstName && (
-            <p className="contact-erros">{errors.firstName.message} </p>
+            <p className="errorAlert">{errors.firstName.message} </p>
           )}
           <input
             type="text"
@@ -42,7 +42,7 @@ const Contact = () => {
             placeholder="Last Name"
           />
           {errors.lastName && (
-            <p className="contact-erros">{errors.lastName.message} </p>
+            <p className="errorAlert">{errors.lastName.message} </p>
           )}
 
           <input
@@ -57,7 +57,7 @@ const Contact = () => {
             id="email"
             placeholder="Email"
           />
-          {errors.email && <p className="errorTxt">{errors.email.message}</p>}
+          {errors.email && <p className="errorAlert">{errors.email.message}</p>}
           <input type="text" id="mobile" placeholder="Mobile (Not Required)" />
           <h4>Leave your message here</h4>
           <textarea
@@ -75,7 +75,7 @@ const Contact = () => {
             placeholder="Your message"
           ></textarea>
           {errors.message && (
-            <p className="errorTxt">{errors.message.message}</p>
+            <p className="errorAlert">{errors.message.message}</p>
           )}
           <input type="submit" value="Send" id="button" />
         </form>

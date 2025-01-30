@@ -49,10 +49,10 @@ export default function Products() {
     setPriceList([...reverseSortedProducts]);
   };
 
+  //add to cart button
   const handleAddToBag = (itemId) => {
     setClickedItem(itemId);
     setTimeout(() => setClickedItem(null), 1000);
-    // Add your cart functionality here
   };
 
   useEffect(() => {
@@ -76,8 +76,9 @@ export default function Products() {
           alignItems: "center",
         }}
       >
-        <h2 className="product-header">SHOP ALL PRODUCTS</h2>
-
+        <div className="pHeader">
+          <h2 className="product-header">SHOP ALL PRODUCTS</h2>
+        </div>
         <div id="filter-buttons">
           <div className="dropdown">
             <button className="dropbtn">Filter by: </button>

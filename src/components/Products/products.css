@@ -1,3 +1,11 @@
+.pHeader {
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(black, white);
+  padding-top: 10px;
+  padding-bottom: 200px;
+}
+
 .product-header {
   display: flex;
   justify-content: center;
@@ -6,6 +14,7 @@
   font-weight: 700;
   margin: 8%;
   color: rgb(0, 0, 0);
+  padding-bottom: 40px;
 }
 
 #shoe-container {
@@ -225,26 +234,10 @@ button:hover {
   display: block; /* Show dropdown on hover */
 }
 
-/* h1,
-h2 {
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-  font-family: sans-serif;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 32px;
-}
-
-h1 {
-  font-size: 50px;
-} */
-
 @media (max-width: 768px) {
-  h1 {
+  .product-header {
     font-size: 26px;
+    padding-top: 100px;
   }
 
   #shoe-container {
