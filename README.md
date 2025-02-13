@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 Mentor made GitHub commit comments, I would have been more professional.
+## Project Overview
+This e-commerce website is designed to showcase and sell sneakers. Built with a modern and responsive front-end using React, the platform provides an engaging shopping experience for sneaker enthusiasts. The site includes a React-based slider component to highlight featured products and ensures smooth navigation and interaction for users. It also includes a products page where all the sneakers are listed for sale and can be filtered by price or brand. Lastly it has a contact page for any questions the user might have about my website.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
